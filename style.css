@@ -1,0 +1,84 @@
+/* style.css (Final version for "document flow" layout) */
+
+body {
+  background-color: #fdf6e3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  width: 320px;
+  padding: 10px;
+  text-align: center;
+  color: #657b83;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+textarea {
+  background-color: #eee8d5;
+  border: 1px solid #dcd5c2;
+  border-radius: 6px;
+  width: 95%;
+  margin-bottom: 12px;
+  padding: 8px;
+  font-size: 14px;
+  color: #586e75;
+  resize: vertical;
+  min-height: 80px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #93a1a1;
+}
+
+button {
+  background-color: #eee8d5;
+  border: 1px solid #dcd5c2;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #657b83;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #dcd5c2;
+}
+
+#output-area {
+  margin-top: 15px;
+  background-color: #fff;
+  border: 1px solid #dcd5c2;
+  border-radius: 6px;
+  padding: 8px 4px; /* Reduced padding for a tighter fit */
+  display: block;
+  word-break: break-all;
+}
+
+/* DELETED .latex-line and .latex-line:not(:last-child) rules */
+
+#action-buttons-container {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#action-buttons-container.hidden {
+  display: none;
+}
+
+.katex-display {
+  margin: 0.5em 0; /* Add a small natural margin provided by KaTeX default styles */
+}
+
+.error-message {
+  color: #dc322f;
+  font-family: monospace;
+  font-size: 12px;
+}

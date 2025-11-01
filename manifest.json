@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LaTeX Converter",
+  "version": "1.1",
+  "description": "Converts LaTeX expressions into high-resolution images.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

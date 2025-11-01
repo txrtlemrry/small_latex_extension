@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LaTeX Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="katex.min.css">
+</head>
+<body>
+  <h3>LaTeX Converter</h3>
+  <textarea id="latex-input" placeholder="Enter each expression on a new line...">f(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} 
+= \int_{-\infty}^{x} e^{-t^2} dt \quad \text{for } x \in \mathbb{R}
+
+</textarea>
+  <button id="convert-btn">Convert</button>
+
+  <div id="output-area">
+    <p>Your rendered LaTeX will appear here</p>
+  </div>
+
+  <!-- New Action Buttons -->
+  <div id="action-buttons-container" class="hidden">
+    <button id="copy-btn">Copy Image</button>
+    <button id="save-btn">Save Image</button>
+  </div>
+
+  <script src="katex.min.js"></script>
+  <script src="html2canvas.min.js"></script> <!-- Add html2canvas script -->
+  <script src="popup.js"></script>
+</body>
+</html>
