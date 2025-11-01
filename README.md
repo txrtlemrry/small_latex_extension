@@ -2,7 +2,7 @@
 
 ![Screenshot of the LaTeX Converter Extension](ss.png)
 
-A simple Chrome extension to convert LaTeX expressions copyable images.
+A simple Chrome extension to convert LaTeX expressions into copyable images.
 
 ## Features
 
